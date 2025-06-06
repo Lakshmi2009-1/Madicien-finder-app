@@ -1,0 +1,102 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+  #welcome-card{
+      background: linear-gradient(to right, #e0f7fa, #fffde7);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 450px;
+      min-height: 800px;
+      text-align: center;
+      padding: 20px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #00796b;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p.tagline {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 30px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .main-image {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      margin-bottom: 30px;
+      animation: zoomIn 2s ease-in-out;
+    }
+
+    .qualities {
+      background: #ffffffdd;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      max-width: 600px;
+      animation: slideUp 2s ease-in-out;
+    }
+
+    .qualities h2 {
+      color: #00695c;
+      margin-bottom: 10px;
+    }
+
+    .qualities ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .qualities ul li {
+      font-size: 1rem;
+      margin: 10px 0;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    .qualities ul li::before {
+      position: absolute;
+      left: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .main-image {
+        width: 180px;
+        height: 180px;
+      }
+    }

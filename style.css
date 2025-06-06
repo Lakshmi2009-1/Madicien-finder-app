@@ -1,0 +1,182 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+#main{
+ max-width: 600px;
+  height: 100vh;
+  margin: auto;
+  overflow: auto;
+}
+
+nav {
+      background-color: #00b894;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      position: relative;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 16px;
+      text-decoration: none;
+      padding: 5px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #fff;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-links a:hover {
+      color: #1758B0;
+    }
+
+
+
+#inpArea{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 10px;
+}
+
+label{
+  font-size: 20px
+}
+
+input{
+  border: 1px solid black;
+  padding: 5px 20px;
+  width: 90%;
+  border-radius: 10px;
+  font-style: 20px;
+  max-width: 300px;
+}
+
+.original{
+  display: block;
+  overflow: auto;
+  padding: 10px;
+}
+
+.newDiv{
+  width: 350px;
+  display: flex;
+  margin: 15px auto;
+  align-items: center;
+  border: none;
+  background: white;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #9EE3E8, #ABEBBA);
+  box-shadow: 0 10px 10px #A0ABA1CF;
+  color: darkblue;
+  font-weight: 500;
+}
+
+.pImg{
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+#noFound{
+  color: red;
+  font-size: 30px;
+  text-align: center;
+  display: none;
+  margin: 10px;
+}
+
+.alterDiv{
+  display: block;
+  overflow: auto;
+}
+
+  button{
+      padding: 10px 28px;
+      background: linear-gradient(to right, #107736, #20B803);
+      color: #fff;
+      font-size: 17px;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin: 10px;
+    }
+
+   
+
+  button:hover{
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 184, 64, 0.8);
+  }
+  
+  #showResult{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  #main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .org-btn, .alt-btn, .alt-lab{
+    display: none;
+  }
+  
+  span{
+    color: #000;
+    font-weight: normal;
+    font-size: 15px;
+  }
+  

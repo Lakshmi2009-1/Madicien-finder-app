@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> medicine finder web app</title>
+  
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="welcome.css">
+</head>
+
+<body>
+  <div id="main">
+    <nav>
+    <div class="logo">💊 MedFinder</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="about.html">About</a>
+     
+    </div>
+  </nav>
+
+   
+   <div id="inpArea">
+     <label for="med">🔍FiND MADICIEN 💊 </label>
+    <input type="text" id="med" oninput="find(event)" placeholder="search medicine"/>
+   </div>
+   
+    <div id="main-content">
+   
+   <button onclick="findAlter()" class="alt-btn">find alternative</button>
+   
+   <h1 id="noFound">SORRY! No Madicien Found</h1>
+
+  <div id="showResult">
+       <button class="org-btn" onclick="displayOrg()">Original medicine</button>
+      <div class="original"></div>
+      
+      <button class="alt-lab">Alternative med's</button>
+      
+      <div class="alterDiv"></div>
+     
+     </div>
+  </div>
+  
+    <div id="welcome-card">
+
+  <h1>Welcome to Medicine Finder</h1>
+  <p class="tagline">Find Generic Medicines & Save Money on Health</p>
+
+  <img class="main-image" src="https://content.jdmagicbox.com/comp/lucknow/l9/0522px522.x522.220327203038.d6l9/catalogue/prdhan-mantri-jan-aushadhi-kendra-lucknow-chemists-0fkvatjnq1.jpg" alt="Medicine Image">
+
+  <div class="qualities">
+    <h2>Why Use This Project?</h2>
+    <ul>
+      <li>💊 Search medicines easily</li>
+      <li>💰 Shows cheaper alternatives</li>
+      <li>🧠 Built with JavaScript, HTML, CSS</li>
+      <li>✨ Smooth animations and UI</li>
+    </ul>
+  </div>
+  
+  </div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
