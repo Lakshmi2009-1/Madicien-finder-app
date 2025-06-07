@@ -617,7 +617,7 @@ function showAlter(alterArray, search){
   medImg.classList.add('pImg');
   
   medImg.src = (alterArray[i].imgLink);
-  manu.innerHTML = (`<span>name</span>: ` + alterArray[i].name);
+  medName.innerHTML = (`<span>name</span>: ` + alterArray[i].name);
   medPrice.innerHTML = (`<span>price</span>: ` +  alterArray[i].price);
   manu.innerHTML = (`<span>manufacturer</span>: ` + alterArray[i].manu);
   newDiv.href = alterArray[i].link
