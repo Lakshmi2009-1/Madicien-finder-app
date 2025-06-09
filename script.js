@@ -504,7 +504,7 @@ function showMain () {
 const mainArea = document.getElementById('main-area');
 const welcome = document.getElementById('welcome-card');
 const main = document.getElementById('main');
-  main.style.background = 'url("/medImg.jpeg") no-repeat center center / cover';
+  main.style.background = 'url("./images (2).jpeg") no-repeat center center / cover';
 mainArea.style.display = 'block';
 welcome.style.display = 'none';
 }
