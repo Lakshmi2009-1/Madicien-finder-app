@@ -500,11 +500,18 @@ const original = document.querySelector('.original');
 
 const welcome = document.getElementById('welcome-card');
 
+function showMain () {
+const mainArea = document.getElementById('main-area');
+const welcome = document.getElementById('welcome-card');
+const main = document.getElementById('main');
+  main.style.background = 'url("/medImg.jpeg") no-repeat center center / cover';
+mainArea.style.display = 'block';
+welcome.style.display = 'none';
+}
+
 
 function find(event){
   const search = event.target.value.toLowerCase();
-
-  welcome.style.display = "none";
 
   showOriginal(search);
 }
