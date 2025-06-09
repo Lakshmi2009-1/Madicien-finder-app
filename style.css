@@ -179,4 +179,8 @@ input{
     font-weight: normal;
     font-size: 15px;
   }
+
+  #main-area{
+     display: none;
+  }
   
