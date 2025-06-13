@@ -584,7 +584,7 @@ function findAlter() {
     
     for (let p = 0; p < allMeds[i].alt.length; p++) {
       
-      if ( allMeds[i].name.toLowerCase().includes(search) ) {
+      if ( allMeds[i].name.toLowerCase() == search ) {
       alterArray.push(allMeds[i].alt[p]);
       }
     }
@@ -602,7 +602,8 @@ function showAlter(alterArray, search){
   if (alterArray.length === 0 || search === '') {
    
     noFound.style.display = 'block';
-    noFound.innerHTML = 'no MADICIEN Found';
+    noFound.innerHTML = 'To get accurate alternative results, please type the full name of the medicine';
+    noFound.style.color = "#00b894";
     return;
   } 
     else{
